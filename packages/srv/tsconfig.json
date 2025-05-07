@@ -1,0 +1,25 @@
+{
+  "compileOnSave": false,
+  "exclude": ["node_modules", "dist"],
+  "compilerOptions": {
+    "strict": true,
+    "outDir": "./dist",
+    "sourceMap": false,
+    "declaration": true,
+    "moduleResolution": "Bundler",
+    "module": "ESNext",
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "esModuleInterop": true,
+    "target": "ESNext",
+    "allowJs": true,
+    "resolveJsonModule": true,
+    "downlevelIteration": true,
+    "typeRoots": [
+      "node_modules/@types",
+      "src/declarations"
+    ],
+    "lib": ["ESNext"],
+    "baseUrl": "./"
+  }
+}

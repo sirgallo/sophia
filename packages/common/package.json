@@ -1,0 +1,33 @@
+{
+  "name": "common",
+  "version": "0.1.0",
+  "description": "common shared utilities",
+  "type": "module",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "keywords": [],
+  "author": "sirgallo",
+  "license": "MIT",
+  "engines": {
+    "node": ">=20",
+    "pnpm": ">=8",
+    "bun": ">=1"
+  },
+  "scripts": {
+    "build:common": "tsc -p ./tsconfig.json",
+    "format": "prettier --write src/"
+  },
+  "dependencies": {
+    "@sinclair/typebox": "^0.32.35",
+    "env-schema": "^6.0.1",
+    "mongodb": "^6.16.0",
+    "pino": "^9.6.0"
+  },
+  "devDependencies": {
+    "pino-pretty": "^11.3.0",
+    "prettier": "^3.5.3",
+    "rimraf": "^5.0.10",
+    "typescript": "^5.8.3"
+  },
+  "packageManager": "pnpm@9.10.0+sha512.73a29afa36a0d092ece5271de5177ecbf8318d454ecd701343131b8ebc0c1a91c487da46ab77c8e596d6acf1461e3594ced4becedf8921b074fbd8653ed7051c"
+}

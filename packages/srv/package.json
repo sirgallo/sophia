@@ -1,0 +1,46 @@
+{
+  "name": "srv",
+  "version": "0.1.0",
+  "description": "backend for pickup",
+  "type": "module",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "author": "sirgallo",
+  "keywords": [],
+  "license": "MIT",
+  "engines": {
+    "node": ">=22",
+    "pnpm": ">=9",
+    "bun": ">=1"
+  },
+  "scripts": {
+    "build:srv": "tsc -p ./tsconfig.json",
+    "start:srv": "node dist/src/start.js",
+    "format": "prettier --write src/"
+  },
+  "dependencies": {
+    "common": "workspace:common",
+    "compression": "^1.8.0",
+    "express": "^5.1.0",
+    "helmet": "^8.1.0",
+    "jose": "^6.0.11",
+    "lodash": "^4.17.21",
+    "morgan": "^1.10.0",
+    "passport": "^0.7.0",
+    "reflect-metadata": "^0.2.2",
+    "tsyringe": "^4.10.0"
+  },
+  "devDependencies": {
+    "@rollup/plugin-terser": "^0.4.4",
+    "@rollup/plugin-typescript": "^12.1.2",
+    "@types/compression": "^1.7.5",
+    "@types/express": "^5.0.1",
+    "@types/lodash": "^4.17.16",
+    "@types/node": "^22.15.3",
+    "esbuild": "^0.24.2",
+    "prettier": "^3.5.3",
+    "rollup": "^4.40.1",
+    "typescript": "^5.8.3"
+  },
+  "packageManager": "pnpm@9.10.0+sha512.73a29afa36a0d092ece5271de5177ecbf8318d454ecd701343131b8ebc0c1a91c487da46ab77c8e596d6acf1461e3594ced4becedf8921b074fbd8653ed7051c"
+}
