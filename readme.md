@@ -191,6 +191,8 @@ pnpm start:srv
 
 ### loadtest
 
+By default, all servers are prebundled with a healthcheck route, located at `/poll`.
+
 [autocannon](https://github.com/mcollina/autocannon) is used for loadtesting.
 
 `installation`
