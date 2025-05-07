@@ -161,7 +161,7 @@ container.registerSingleton<MyRouteEndpoints>(TOKEN_MAP.MyRouteEndpoints, MyRout
 
 `token`
 
-Token is file that registers your dependencies and let's you resolve them later when injected.
+Token is a file that registers your dependencies and let's you resolve them later when injected.
 
 ```ts
 export const TOKEN_MAP = {
